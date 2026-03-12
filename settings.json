@@ -5,86 +5,91 @@
     "password": "",
     "type": "offline"
   },
+
   "server": {
     "ip": "dps45lifesteal.aternos.me",
     "port": 38500,
-    "version": "",
-    "try-creative": true
+    "version": "1.21.11",
+    "try-creative": false
   },
+
   "position": {
-    "enabled": true,
+    "enabled": false,
     "x": 0,
-    "y": 100,
+    "y": 64,
     "z": 0
   },
+
   "utils": {
     "auto-auth": {
-      "enabled": true,
-      "password": "chalol78"
+      "enabled": false
     },
+
     "anti-afk": {
       "enabled": true,
       "sneak": true
     },
+
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 120,
+      "repeat-delay": 600,
       "messages": [
-        "Welcome to the Dps 45 lifesteal smp!  ",
-        "I like to play Minecraft!"
+        "Welcome to the Dps 45 lifesteal smp!"
       ]
     },
+
     "chat-log": true,
+
     "auto-reconnect": true,
-    "auto-reconnect-delay": 2000,
+    "auto-reconnect-delay": 5000,
     "max-reconnect-delay": 120000,
+
     "periodic-rejoin": {
-      "enabled": false,
-      "min-interval": 20,
-      "max-interval": 60
+      "enabled": true,
+      "min-interval": 45,
+      "max-interval": 90
     }
   },
+
   "movement": {
     "enabled": true,
+
     "circle-walk": {
       "enabled": true,
-      "radius": 4,
-      "speed": 3000
+      "radius": 2,
+      "speed": 2500
     },
+
     "look-around": {
       "enabled": true,
-      "interval": 5000
+      "interval": 8000
     },
+
     "random-jump": {
       "enabled": true,
-      "interval": 10000
+      "interval": 15000
     }
   },
+
   "modules": {
     "avoidMobs": true,
-    "combat": true,
+    "combat": false,
     "beds": false,
     "chat": true,
     "console-commands": true
   },
+
   "combat": {
-    "attack-mobs": true,
+    "attack-mobs": false,
     "auto-eat": true
   },
-  "beds": {
-    "pick-up-day": false,
-    "place-night": false
-  },
+
   "discord": {
     "enabled": false,
-    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
-    "events": {
-      "connect": true,
-      "disconnect": true,
-      "chat": false
-    }
+    "webhookUrl": ""
   },
+
   "chat": {
     "respond": true
   }
