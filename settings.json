@@ -6,8 +6,7 @@
     "type": "offline"
   },
   "server": {
-    "ip": "dps45lifesteal.aternos.me
-  ",
+    "ip": "dps45lifesteal.aternos.me",
     "port": 35543,
     "version": "",
     "try-creative": false
