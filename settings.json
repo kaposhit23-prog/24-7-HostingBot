@@ -1,95 +1,91 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "never_gonna_give_u_up",
+    "username": "dps45_esports",
     "password": "",
     "type": "offline"
   },
-
   "server": {
-    "ip": "dps45lifesteal.aternos.me",
-    "port": 38500,
-    "version": "1.21.11",
+    "ip": "dps45lifesteal.aternos.me
+  ",
+    "port": 35543,
+    "version": "",
     "try-creative": false
   },
-
   "position": {
-    "enabled": false,
+    "enabled": true,
     "x": 0,
-    "y": 64,
+    "y": 100,
     "z": 0
   },
-
   "utils": {
     "auto-auth": {
-      "enabled": false
+      "enabled": true,
+      "password": "chalol78"
     },
-
     "anti-afk": {
       "enabled": true,
       "sneak": true
     },
-
     "chat-messages": {
       "enabled": true,
       "repeat": true,
-      "repeat-delay": 600,
+      "repeat-delay": 120,
       "messages": [
-        "Welcome to the Dps 45 lifesteal smp!"
+        "I'm a regular player",
+        "I like to play Minecraft!"
       ]
     },
-
     "chat-log": true,
-
     "auto-reconnect": true,
-    "auto-reconnect-delay": 5000,
+    "auto-reconnect-delay": 2000,
     "max-reconnect-delay": 120000,
-
     "periodic-rejoin": {
-      "enabled": true,
-      "min-interval": 45,
-      "max-interval": 90
+      "enabled": false,
+      "min-interval": 20,
+      "max-interval": 60
     }
   },
-
   "movement": {
     "enabled": true,
-
     "circle-walk": {
       "enabled": true,
-      "radius": 2,
-      "speed": 2500
+      "radius": 4,
+      "speed": 3000
     },
-
     "look-around": {
       "enabled": true,
-      "interval": 8000
+      "interval": 5000
     },
-
     "random-jump": {
       "enabled": true,
-      "interval": 15000
+      "interval": 10000
     }
   },
-
   "modules": {
     "avoidMobs": true,
-    "combat": false,
+    "combat": true,
     "beds": false,
     "chat": true,
     "console-commands": true
   },
-
   "combat": {
-    "attack-mobs": false,
+    "attack-mobs": true,
     "auto-eat": true
   },
-
+  "beds": {
+    "pick-up-day": false,
+    "place-night": false
+  },
   "discord": {
     "enabled": false,
-    "webhookUrl": ""
+    "webhookUrl": "YOUR_DISCORD_WEBHOOK_URL_HERE",
+    "events": {
+      "connect": true,
+      "disconnect": true,
+      "chat": false
+    }
   },
-
   "chat": {
     "respond": true
   }
