@@ -555,7 +555,7 @@ function createBot() {
       clearAllIntervals();
       spawnHandled = false; // reset for next connection
 
-      if (config.discord && config.discord.events && config.discord.events.disconnect && reason !== 'Periodic Rejoin') {
+      if (config.discord && config.discord.events && config.discord.events.disconnect) {
         sendDiscordWebhook(`[-] **Disconnected**: ${reason || 'Unknown'}`, 0xf87171);
       }
 
